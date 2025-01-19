@@ -1,0 +1,31 @@
+<div class="main">
+  <div class="header">
+    <h1>Hotel Reviews</h1>
+  </div>
+  <nz-ribbon *ngFor="let hotel of hotels" [nzText]="'Rating: ' + hotel.rating">
+    <nz-card (click)="navigateToDetails(hotel._id)">
+      <div nz-row nzGutter="16">
+        <div nz-col nzSpan="12">
+          <nz-carousel [nzEffect]="carouselEffect" [nzAutoPlay]="true" style="width: 300px; height: 200px;">
+            <div nz-carousel-content *ngFor="let image of hotel.images" style="width: 300px; height: 200px;">
+              <img nz-image [nzSrc]="image" alt="carousel image"
+                style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+          </nz-carousel>
+        </div>
+        <div nz-col nzSpan="12">
+          <h2>{{ hotel.name }}</h2>
+          <p>
+            <nz-icon nzType="environment" nzTheme="outline"></nz-icon>
+            {{ hotel.location }}
+          </p>
+          <p>
+            Rating:
+            <nz-rate [ngModel]="convertRating(hotel.rating)" [nzAllowHalf]="true" [nzDisabled]="true"></nz-rate>
+          </p>
+          <div class="hotel-description">{{ hotel.description }}</div>
+        </div>
+      </div>
+    </nz-card>
+  </nz-ribbon>
+</div>

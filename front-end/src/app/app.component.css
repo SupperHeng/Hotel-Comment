@@ -1,0 +1,138 @@
+.main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+.review-container {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #007bff;
+}
+
+.review-content {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+.review-author {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.review-user, .review-date, .review-stars {
+  margin-top: 10px;
+  font-style: italic;
+  color: #777;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+form {
+  margin-top: 20px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #28a745;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+form button[type="button"] {
+  background-color: #6c757d;
+}
+
+form button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f2f5;
+  margin-bottom: 20px;
+}
+
+.hotel-list {
+  padding: 20px;
+}
+
+.hotel-details {
+  margin-top: 10px;
+}
+
+nz-card {
+  margin-bottom: 20px;
+}
+
+.carousel-container {
+  margin-bottom: 20px;
+}
+
+[nz-carousel-content] {
+  text-align: center;
+  height: 200px;
+  line-height: 200px;
+  background: #364d79;
+  color: #fff;
+  overflow: hidden;
+}
+
+h3 {
+  color: #fff;
+  margin-bottom: 0;
+  user-select: none;
+}

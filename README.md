@@ -84,3 +84,7 @@ When the application starts for the first time:
 
 No additional database setup is required - the system is ready to use after starting the server.
 
+### Api Test
+
+Postman：https://oa1111.postman.co/workspace/oa-Workspace~79b5d615-1db5-444a-9088-589d039c01a3/collection/39300875-5ae96434-8800-4c7d-8300-2460ee95e979?action=share&creator=39300875
+
